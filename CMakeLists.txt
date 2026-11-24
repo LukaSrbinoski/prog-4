@@ -20,6 +20,7 @@ foreach(CPP_FILE IN LISTS ALL_CPP_FILES)
     string(REPLACE "\\" "_" TARGET_NAME "${TARGET_NAME}")
     string(REPLACE ".cpp" "" TARGET_NAME "${TARGET_NAME}")
 
-    add_executable("${TARGET_NAME}" "${CPP_FILE}")
+    add_executable("${TARGET_NAME}" "${CPP_FILE}"
+            Treta-Domasna/SSOString.cpp)
 
 endforeach()
